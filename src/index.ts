@@ -1,9 +1,14 @@
-import "./styles.css";
+btnaltura.addEventListener("click", () => {
+  console.log();
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+rotulo.innerHTML = "indique la altura de la persona";
+let dato = document.getElementById("dato");
+
+let alturaPermitida : number = 1.3;
+let alturaPersona : number = dato.value;
+//let dato : number = Number(dato.value);
+if (alturaPersona <= alturaPermitida) {
+console.log("La persona no puede subir al juego");
+} else {
+console.log("La persona puede subir al juego");
+}}
